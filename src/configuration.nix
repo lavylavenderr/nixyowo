@@ -1,4 +1,4 @@
-{config, ...}: {
+{config, pkgs, ...}: {
     imports = [
       ./system/audio.nix
       ./system/bluetooth.nix
