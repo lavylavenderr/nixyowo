@@ -7,17 +7,11 @@
     imports = [
         ./variables.nix
         ./git
-        inputs.impermanence.homeManagerModules.impermanence
     ];
 
     home = {
       inherit (config.var) username;
       homeDirectory = "/home/" + config.var.username;
-      persistence."/persistent/home/lavender" = {
-        directories = [
-          ".mozilla/firefox"
-        ];
-      };
 
       packages = with pkgs; [
         # Applications
