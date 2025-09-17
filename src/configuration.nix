@@ -39,6 +39,7 @@
     programs.gamemode.enable = true;
 
     desktopManager.gdm.wayland = true;
+    desktopManager.gdm.enabled = true;
     home-manager.users."${config.var.username}" = import ./home.nix;
     time.hardwareClockInLocalTime = true;
     environment.systemPackages = with pkgs; [
