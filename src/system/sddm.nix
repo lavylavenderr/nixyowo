@@ -17,7 +17,7 @@ in {
   services.displayManager = {
     sddm = {
       extraPackages = [sddm-astronaut];
-      enable = true;
+      enable = false;
       wayland.enable = true;
       theme = "sddm-astronaut";
     };
