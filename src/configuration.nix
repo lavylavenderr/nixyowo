@@ -38,8 +38,8 @@
     programs.steam.gamescopeSession.enable = true;
     programs.gamemode.enable = true;
 
-    desktopManager.gdm.wayland = true;
-    desktopManager.gdm.enabled = true;
+    services.displayManager.gdm.wayland = true;
+    services.displayManager.gdm.enabled = true;
     home-manager.users."${config.var.username}" = import ./home.nix;
     time.hardwareClockInLocalTime = true;
     environment.systemPackages = with pkgs; [
