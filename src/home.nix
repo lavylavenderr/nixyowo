@@ -69,4 +69,7 @@
     };
 
     programs.home-manager.enable = true;
+    programs._1password-gui = {
+      polkitPolicyOwners = [ "lavender" ];
+    };
 }
