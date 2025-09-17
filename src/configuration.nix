@@ -39,7 +39,7 @@
     programs.gamemode.enable = true;
 
     services.displayManager.gdm.wayland = true;
-    services.displayManager.gdm.enabled = true;
+    services.displayManager.gdm.enable = true;
     home-manager.users."${config.var.username}" = import ./home.nix;
     time.hardwareClockInLocalTime = true;
     environment.systemPackages = with pkgs; [
