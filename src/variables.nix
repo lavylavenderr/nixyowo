@@ -9,7 +9,7 @@
     configDirectory =
       "/home/"
       + config.var.username
-      + "/.config/nixos";
+      + "/nixos-config";
 
     keyboardLayout = "us";
 
