@@ -30,7 +30,6 @@ in {
   services.libinput.enable = true;
   programs.dconf.enable = true;
   services = {
-    libinput.enable = true;
     dbus = {
       enable = true;
       implementation = "broker";
