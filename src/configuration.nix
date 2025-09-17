@@ -52,7 +52,7 @@
 
     system.activationScripts.script.text = ''
     mkdir -p /var/lib/AccountsService/{icons,users}
-    cp /nix/persist/home/lavender/Pictures/face.png /var/lib/AccountsService/icons/lavender
+    cp /home/lavender/face.png /var/lib/AccountsService/icons/lavender
     echo -e "[User]\nIcon=/var/lib/AccountsService/icons/lavender\n" > /var/lib/AccountsService/users/lavender
     '';
 
