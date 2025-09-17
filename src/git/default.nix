@@ -1,4 +1,4 @@
-{config, ...}: let
+{config, lib, ...}: let
   username = "Lavender";
   email = "hi@lavylavender.com";
 in {
