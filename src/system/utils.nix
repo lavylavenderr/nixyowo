@@ -44,8 +44,8 @@ in {
       enable = true;
       xkb.layout = keyboardLayout;
       xkb.variant = "";
-      desktopManager.plasma6.enable = true;
     };
+    desktopManager.plasma6.enable = true;
   };
 
 
