@@ -6,7 +6,6 @@
     imports = [
         ./variables.nix
         ./git
-        ./git/signing.nix
     ];
 
     home = {
