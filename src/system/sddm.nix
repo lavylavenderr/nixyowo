@@ -16,7 +16,6 @@
 in {
   services.displayManager = {
     sddm = {
-      package = pkgs.kdePackages.sddm;
       extraPackages = [sddm-astronaut];
       enable = true;
       wayland.enable = true;
