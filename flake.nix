@@ -15,7 +15,7 @@
     };
   };
 
-  outputs = inputs @ {nixpkgs, ...}: {
+  outputs = inputs @ {nixpkgs, impermanence, ...}: {
     nixosConfigurations = {
       nixyowo =
         nixpkgs.lib.nixosSystem {
@@ -27,7 +27,6 @@
               };
             }
             inputs.home-manager.nixosModules.home-manager
-            inputs.impermanence.homeManagerModules.impermanence
             ./src/configuration.nix
           ];
         };

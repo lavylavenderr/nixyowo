@@ -1,11 +1,13 @@
 {
     pkgs,
     config,
+    inputs,
     ...
 }: {
     imports = [
         ./variables.nix
         ./git
+        inputs.impermanence.homeManagerModules.impermanence
     ];
 
     home = {
