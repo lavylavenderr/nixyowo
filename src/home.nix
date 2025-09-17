@@ -64,7 +64,7 @@
       ];
 
       stateVersion = "24.05";
-      file.".face.icon" = {source = ./profile_picture.jpg;};
+      file.".face" = {source = ./profile_picture.jpg;};
     };
 
     programs.home-manager.enable = true;
