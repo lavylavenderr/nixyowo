@@ -20,9 +20,6 @@ in {
       enable = true;
       wayland.enable = true;
       theme = "sddm-astronaut";
-      settings = {
-        Wayland.SessionDir = "${inputs.hyprland.packages.${pkgs.system}.hyprland}/share/wayland-sessions";
-      };
     };
   };
 }
