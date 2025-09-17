@@ -25,8 +25,6 @@
         cloudflare-warp
         darktable
         obsidian
-        _1password-gui
-        _1password-cli
 
 
         # Development
@@ -66,10 +64,11 @@
       stateVersion = "24.05";
       file.".face" = {source = ./profile_picture.jpg;};
       file."face.png" = {source = ./profile_picture.jpg;};
+
+programs._1password-gui = {
+      polkitPolicyOwners = [ "lavender" ];
+    };
     };
 
     programs.home-manager.enable = true;
-    programs._1password-gui = {
-      polkitPolicyOwners = [ "lavender" ];
-    };
 }
