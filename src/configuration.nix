@@ -53,6 +53,8 @@
       _1password-cli
     ];  
 
+    # Profile Pictures for GDM
+
     system.activationScripts.script.text = ''
       mkdir -p /var/lib/AccountsService/{icons,users}
       cp /home/lavender/face.png /var/lib/AccountsService/icons/lavender
@@ -67,5 +69,6 @@
     };
 
     # The Earth will blow up if i touch this
+    
     system.stateVersion = "24.05";
 }

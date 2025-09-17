@@ -11,6 +11,11 @@
     home = {
       inherit (config.var) username;
       homeDirectory = "/home/" + config.var.username;
+      persistence."/persistent/home/lavender" = {
+        directories = [
+          ".mozilla/firefox"
+        ];
+      };
 
       packages = with pkgs; [
         # Applications
@@ -59,6 +64,7 @@
         pipes
         cmatrix
       ];
+
 
       stateVersion = "24.05";
       file.".face" = {source = ./profile_picture.jpg;};

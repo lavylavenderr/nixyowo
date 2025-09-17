@@ -23,6 +23,9 @@ in {
       pull.rebase = "false";
       push.autoSetupRemote = true;
       color.ui = "1";
+
+      # 1Password Config 
+
       gpg = {
         format = "ssh";
       };
@@ -33,7 +36,7 @@ in {
         gpgsign = true;
       };
       user = {
-        signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBoRrDu9BoOJO9P4ClfwZRb0eg6lctyxmpufx6v9/3C5";
+        signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBoRrDu9BoOJO9P4ClfwZRb0eg6lctyxmpufx6v9/3C5"; # my pub key that i use everywhere
       };
     };
     aliases = {
