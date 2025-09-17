@@ -19,7 +19,6 @@
         ayugram-desktop
         vscode
         vesktop
-        resources
         vlc
         mpv
         spotify
