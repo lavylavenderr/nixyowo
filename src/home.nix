@@ -23,7 +23,6 @@
         mpv
         spotify
         cloudflare-warp
-        figma-linux
         darktable
         obsidian
         _1password-gui
@@ -40,7 +39,7 @@
         pnpm
         air
         duckdb
-        rust
+        rustup
         typescript
         eslint
         cargo
