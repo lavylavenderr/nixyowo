@@ -32,6 +32,9 @@ in {
       commit = {
         gpgsign = true;
       };
+      user = {
+        signingKey = "...";
+      };
     };
     aliases = {
       essa = "push --force";
