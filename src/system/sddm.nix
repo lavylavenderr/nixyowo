@@ -18,7 +18,7 @@ in {
     sddm = {
       extraPackages = [sddm-astronaut];
       enable = false;
-      wayland.enable = true;
+      wayland.enable = false;
       theme = "sddm-astronaut";
     };
   };
