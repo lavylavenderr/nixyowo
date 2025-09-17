@@ -42,6 +42,7 @@
     services.displayManager.gdm.enable = true;
     home-manager.users."${config.var.username}" = import ./home.nix;
     time.hardwareClockInLocalTime = true;
+
     environment.systemPackages = with pkgs; [
       mangohud 
       protonup-qt 
@@ -49,6 +50,14 @@
       bottles 
       heroic
     ];  
+
+    environment.etc = {
+      "1password/custom_allowed_browsers" = {
+        text = ''
+          firefox
+        '';
+        mode = "0755";
+    };
 
     system.activationScripts.script.text = ''
     mkdir -p /var/lib/AccountsService/{icons,users}
