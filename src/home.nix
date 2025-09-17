@@ -39,7 +39,6 @@
         pnpm
         air
         duckdb
-        rustup
         typescript
         eslint
         cargo
