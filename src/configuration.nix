@@ -32,6 +32,15 @@
 
     # Misc Config 
 
+    environment.etc = {
+      "1password/custom_allowed_browsers" = {
+        text = ''
+          firefox
+        '';
+        mode = "0755";
+      };
+    };
+
     services.flatpak.enable = true;
 
     programs.steam.enable = true;
@@ -50,14 +59,6 @@
       bottles 
       heroic
     ];  
-
-    environment.etc = {
-      "1password/custom_allowed_browsers" = {
-        text = ''
-          firefox
-        '';
-        mode = "0755";
-    };
 
     system.activationScripts.script.text = ''
       mkdir -p /var/lib/AccountsService/{icons,users}
