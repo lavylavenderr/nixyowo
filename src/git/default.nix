@@ -33,7 +33,7 @@ in {
         gpgsign = true;
       };
       user = {
-        signingKey = "...";
+        signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBoRrDu9BoOJO9P4ClfwZRb0eg6lctyxmpufx6v9/3C5";
       };
     };
     aliases = {
