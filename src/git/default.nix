@@ -23,6 +23,15 @@ in {
       pull.rebase = "false";
       push.autoSetupRemote = true;
       color.ui = "1";
+      gpg = {
+        format = "ssh";
+      };
+      "gpg \"ssh\"" = {
+        program = "${lib.getExe' pkgs._1password-gui "op-ssh-sign"}";
+      };
+      commit = {
+        gpgsign = true;
+      };
     };
     aliases = {
       essa = "push --force";
