@@ -32,15 +32,6 @@
 
     # Misc Config 
 
-    environment.etc = {
-      "1password/custom_allowed_browsers" = {
-        text = ''
-          firefox
-        '';
-        mode = "0755";
-      };
-    };
-
     services.flatpak.enable = true;
 
     programs.steam.enable = true;
@@ -58,6 +49,8 @@
       lutris 
       bottles 
       heroic
+      _1password-gui
+      _1password-cli
     ];  
 
     system.activationScripts.script.text = ''
@@ -65,6 +58,21 @@
       cp /home/lavender/face.png /var/lib/AccountsService/icons/lavender
       echo -e "[User]\nIcon=/var/lib/AccountsService/icons/lavender\n" > /var/lib/AccountsService/users/lavender
     '';
+
+    # 1Password
+
+    environment.etc = {
+      "1password/custom_allowed_browsers" = {
+        text = ''
+          firefox
+        '';
+        mode = "0755";
+      };
+    };
+
+    programs._1password-gui = {
+      polkitPolicyOwners = [ "lavender" ];
+    };
 
     # The Earth will blow up if i touch this
     system.stateVersion = "24.05";
