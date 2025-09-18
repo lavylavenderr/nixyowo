@@ -27,19 +27,60 @@ in {
   i18n.defaultLocale = defaultLocale;
   console.keyMap = keyboardLayout;
 
-  services.libinput.enable = true;
-  programs.dconf.enable = true;
+  programs = {
+    nix-ld.enable = true;
+    obs-studio = {
+      enable = true;
+      package = (
+        pkgs.obs-studio.override {
+          cudaSupport = true;
+        }
+      );
+      plugins = with pkgs.obs-studio-plugins; [
+        wlrobs
+        obs-backgroundremoval
+        obs-pipewire-audio-capture
+        obs-vaapi
+        obs-gstreamer
+        obs-vkcapture
+      ];
+    };
+    steam = {
+      enable = true;
+      gamescopeSession.enable = true;
+    };
+    gamemode.enable = true;
+    dconf.enable = true;
+    _1password-gui = {
+      enable = true;
+      polkitPolicyOwners = [ "lavender" ];
+    };
+  };
+  
   services = {
     dbus = {
       enable = true;
       implementation = "broker";
       packages = with pkgs; [ gcr ];
     };
+    flatpak.enable = true;
     gvfs.enable = true;
     upower.enable = true;
     power-profiles-daemon.enable = true;
     udisks2.enable = true;
-
+    libinput.enable = true;
+    displayManager = {
+      gdm = {
+        enable = true;
+        wayland = true;
+      };
+      sddm = {
+        extraPackages = [sddm-astronaut];
+        enable = false;
+        wayland.enable = false;
+        theme = "sddm-astronaut";
+      };
+    };
     xserver = {
       enable = true;
       xkb.layout = keyboardLayout;
@@ -69,6 +110,16 @@ in {
     vim
     go
     comma
+    mangohud 
+    protonup-qt 
+    lutris 
+    bottles 
+    heroic
+    _1password-gui
+    _1password-cli
+    libGL
+    libGLU
+    steam-run
   ];
 
   security = {

@@ -1,0 +1,1 @@
+heeey~ this is my nixos config for my daily driver. enjoooy :3 :3 :3

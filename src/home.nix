@@ -6,7 +6,9 @@
 }: {
     imports = [
         ./variables.nix
-        ./git
+        ./programs/git.nix
+        ./programs/thunderbird.nix
+        ./programs/kitty
     ];
 
     home = {
@@ -22,10 +24,10 @@
         vlc
         mpv
         spotify
-        cloudflare-warp
         darktable
-        obsidian
-
+        distrobox
+        docker-compose
+        prismlauncher
 
         # Development
         go
