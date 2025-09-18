@@ -74,6 +74,7 @@ programs.obs-studio = {
       _1password-cli
       libGL
       libGLU
+      steam-run
     ];  
 
     # Profile Pictures for GDM
