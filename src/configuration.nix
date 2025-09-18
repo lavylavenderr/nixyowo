@@ -34,6 +34,7 @@
 
     services.flatpak.enable = true;
 
+    programs.nix-ld.enable = true;
 programs.obs-studio = {
     enable = true;
 
