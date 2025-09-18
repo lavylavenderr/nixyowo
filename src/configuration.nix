@@ -72,6 +72,8 @@ programs.obs-studio = {
       heroic
       _1password-gui
       _1password-cli
+      libGL
+      libGLU
     ];  
 
     # Profile Pictures for GDM
