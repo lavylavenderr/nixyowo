@@ -14,7 +14,7 @@
     };
   };
 
-  outputs = inputs @ {nixpkgs, ...}: {
+  outputs = inputs @ {nixpkgs, nix-gaming, ...}: {
     nixosConfigurations = {
       nixyowo =
         nixpkgs.lib.nixosSystem {
