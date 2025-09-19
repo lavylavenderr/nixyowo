@@ -92,10 +92,7 @@ in {
         wayland = true;
       };
       sddm = {
-        extraPackages = [sddm-astronaut];
         enable = false;
-        wayland.enable = false;
-        theme = "sddm-astronaut";
       };
     };
     xserver = {
