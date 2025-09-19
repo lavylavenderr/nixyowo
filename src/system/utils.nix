@@ -67,12 +67,11 @@ in {
     ohMyZsh = {
       enable = true;
       plugins = ["git" "fzf" "kitty" "systemd" "qrcode" "docker"];
-      theme = "gentoo"; 
+      theme = "lambda"; 
 
       autosuggestions.enable = true;
       syntaxHighlighting.enable = true;
     };
-   };   
   };
   
   services = {
