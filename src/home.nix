@@ -28,7 +28,6 @@
         distrobox
         docker-compose
         prismlauncher
-        termius
 
         # Development
         go
