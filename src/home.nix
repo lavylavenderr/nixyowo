@@ -42,6 +42,7 @@
         typescript
         eslint
         cargo
+        dotenvx # i need to decrypt my envs somehow lol
         
 
         # Utils

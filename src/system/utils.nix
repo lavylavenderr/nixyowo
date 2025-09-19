@@ -124,6 +124,7 @@ in {
     protonup-qt 
     lutris 
     bottles 
+    (pkgs.bottles.override { removeWarningPopup = true; })
     heroic
     _1password-gui
     _1password-cli
@@ -132,6 +133,7 @@ in {
     libGLU
     steam-run
     protonup-qt
+    fzf
     krita
     flameshot
     xclip
