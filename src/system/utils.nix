@@ -49,7 +49,6 @@ in {
     steam = {
       enable = true;
       gamescopeSession.enable = true;
-      platformOptimizations.enable = true;
     };
     gamemode.enable = true;
     dconf.enable = true;
