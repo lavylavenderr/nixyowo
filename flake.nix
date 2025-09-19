@@ -8,13 +8,14 @@
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     _1password-shell-plugins.url = "github:1Password/shell-plugins"; 
+    nix-gaming.url = "github:fufexan/nix-gaming";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = inputs @ {nixpkgs, nix-gaming, ...}: {
+  outputs = inputs @ {nixpkgs, ...}: {
     nixosConfigurations = {
       nixyowo =
         nixpkgs.lib.nixosSystem {
