@@ -63,14 +63,14 @@ in {
       shellAliases = {
         nixrebuild = "sudo nixos-rebuild switch --flake ~/.config/nixos";
       };
-    };
-    ohMyZsh = {
-      enable = true;
-      plugins = ["git" "fzf" "kitty" "systemd" "qrcode" "docker"];
-      theme = "lambda"; 
+      ohMyZsh = {
+        enable = true;
+        plugins = ["git" "fzf" "kitty" "systemd" "qrcode" "docker"];
+        theme = "lambda"; 
 
-      autosuggestions.enable = true;
-      syntaxHighlighting.enable = true;
+        autosuggestions.enable = true;
+        syntaxHighlighting.enable = true;
+      };
     };
   };
   
