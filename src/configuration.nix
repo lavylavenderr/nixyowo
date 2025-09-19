@@ -8,6 +8,7 @@
       ./system/nvidia.nix
       ./system/users.nix
       ./system/utils.nix
+      ./system/fonts.nix
 
       ./variables.nix
       ./hardware-configuration.nix # MUST BE IN HERE WHENEVER I DO INSTALL :P

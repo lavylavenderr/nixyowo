@@ -1,6 +1,7 @@
 {
     pkgs,
     config,
+    inputs,
     ...
 }: let
   hostname = config.var.hostname;
@@ -48,6 +49,7 @@ in {
     steam = {
       enable = true;
       gamescopeSession.enable = true;
+      platformOptimizations.enable = true;
     };
     gamemode.enable = true;
     dconf.enable = true;
@@ -55,6 +57,19 @@ in {
       enable = true;
       polkitPolicyOwners = [ "lavender" ];
     };
+    zsh = {
+      enable = true;
+      enableCompletion = true;
+    };
+    ohMyZsh = {
+      enable = true;
+      plugins = ["git" "fzf" "kitty" "systemd" "qrcode" "docker"];
+      theme = "gentoo"; 
+
+      autosuggestions.enable = true;
+      syntaxHighlighting.enable = true;
+    };
+   };   
   };
   
   services = {
@@ -118,8 +133,20 @@ in {
     _1password-gui
     _1password-cli
     libGL
+    htop
     libGLU
     steam-run
+    protonup-qt
+    krita
+    flameshot
+    xclip
+    libreoffice-fresh
+    gparted
+    inputs.nix-gaming.packages.${pkgs.system}.winetricks-git
+    inputs.nix-gaming.packages.${pkgs.system}.wine-tkg
+    inputs.nix-gaming.packages.${pkgs.system}.wine-discord-ipc-bridge
+    inputs.nix-gaming.packages.${pkgs.system}.osu-stable
+    simplescreenrecorder
   ];
 
   security = {
