@@ -61,7 +61,7 @@ in {
       enable = true;
       enableCompletion = true;
       shellAliases = {
-        nixrebuild = "sudo nixos-rebuild switch --flake ~/.config/nixos"
+        nixrebuild = "sudo nixos-rebuild switch --flake ~/.config/nixos";
       };
     };
     ohMyZsh = {
