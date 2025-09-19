@@ -66,9 +66,6 @@ in {
         enable = true;
         plugins = ["git" "fzf" "kitty" "systemd" "qrcode" "docker"];
         theme = "lambda"; 
-
-        autosuggestions.enable = true;
-        syntaxHighlighting.enable = true;
       };
     };
   };
